@@ -1,16 +1,9 @@
-
-.debug1 {
-    background-color: rgb(169, 96, 221);
-}
-.debug2 {
-    background-color: rgb(38, 97, 33);
-}
-
 body {
     margin: 0rem;
     font-family: 'Source Sans Pro', monospace;
-    background-color: rgb(227, 188, 221);
+    background-color: rgb(111, 141, 233);
     font-size: 1.0rem;
+    color: rgb(19, 29, 58);
 }
 
 p {
@@ -28,7 +21,6 @@ button {
 button:hover, button:active {
     opacity: 0.8;
     cursor: pointer;
-    /* background-color: rgb(196, 246, 275); */
 }
 
 textarea {
@@ -40,21 +32,23 @@ textarea {
     font-weight: inherit;
     text-decoration: none;
     font-family: inherit;
+    color: inherit;
 }
 
 .main-container {
-    background-color: rgb(111, 141, 233);
     margin-left: auto;
     margin-right: auto;
     max-width: 50rem;
     display: flex;
     flex-direction: column;
+    background-color: rgb(141, 171, 253);
+    /* flex-direction: row; */
     /* gap: 1rem; */
 }
 
 .main-container > div {
     margin: 0.3rem 0.3rem;
-    background-color: rgb(227, 165, 106);
+    /* background-color: rgb(141, 171, 253); */
 }
 
 .flex-center {
@@ -70,6 +64,10 @@ textarea {
     gap: 1rem;
 }
 
+.flex-options > div {
+    margin: 0.3rem 0.3rem;
+}
+
 .flex-options > div:first-child {
     margin-right: auto;
 }
@@ -79,7 +77,7 @@ textarea {
     width: 5rem;
 }
 
-.flex-todo {
+.todo-row {
     display: flex;
     flex-direction: row;
     gap: 0.3rem;
@@ -87,9 +85,17 @@ textarea {
     /* justify-content: space-between; */
 }
 
-.flex-todo > div {
-    background-color: rgb(83, 152, 181);
-    margin: 0.3rem 0rem;
+.todo-row:nth-child(even) {
+    background-color: rgb(174, 215, 212);
+}
+
+.todo-row:nth-child(odd) {
+    background-color: rgb(154, 195, 202);
+}
+
+.todo-row > div {
+    /* background-color: rgb(83, 152, 181); */
+    margin: 0.5rem 0.5rem;
     /* padding: 0.4rem; */
     /* margin: 0.3rem 0.3rem; */
     /* align-items: flex-start; */
@@ -98,76 +104,75 @@ textarea {
     /* height: 100%; */
 }
 
-.flex-todo > div:first-child {
+.todo-row > div:first-child {
     display: flex;
     align-items: center;
     margin-right: auto;
     /* width: 100%; */
 }
 
-.flex-todo > div > p {
+/* .todo-row > div > p {
     background-color: rgb(162, 207, 235);
-}
+} */
 
-.flex-todo > div > button {
+.todo-row > div > button {
     height: 2.5rem;
     width: 4rem;
 }
 
-.button-show-completed {
-    background-color: rgb(255, 252, 45);
-}
-
-.button-show-deleted {
-    background-color: rgb(246, 38, 246);
-}
-
 .button-add-todo {
-    background-color: rgb(96, 255, 88);
+    background-color: rgb(240, 202, 247);
 }
 
-.button-save {
-    background-color: rgb(162, 255, 236);
+.button-cancel,
+.button-delete,
+.button-show-deleted {
+    background-color: rgb(244, 172, 136);
 }
 
-.button-cancel {
-    background-color: rgb(255, 178, 90);
+.button-save,
+.button-check,
+.button-show-completed {
+    background-color: rgb(195, 247, 196);
 }
 
-.button-delete {
-    background-color: rgb(255, 108, 35);
-}
-
-.button-check {
-    background-color: rgb(162, 255, 163);
-}
-
-.flex-todo-edit {
+.todo-row-edit {
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 0.3rem;
-    background-color: rgb(67, 243, 184);
+    background-color: rgb(204, 245, 242);
+    animation-name: color_switcher;
+    animation-duration: 3s;
+    /* animation-iteration-count: infinite; */
+    /* gap: 0.5rem; */
 }
 
-.flex-todo-edit > div {
-    margin: 0.3rem;
+@keyframes color_switcher {
+    0%   {background-color: rgb(204, 245, 242);}
+    40%  {background-color: rgb(204, 245, 242);}
+    50%  {background-color: rgb(214, 245, 222);}
+    60%  {background-color: rgb(204, 245, 242);}
+    100% {background-color: rgb(204, 245, 242);}
 }
 
-.flex-todo-edit > div:first-child {
+.todo-row-edit > div {
+    margin: 0.5rem;
+}
+
+.todo-row-edit > div:first-child {
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.flex-todo-edit > div > textarea {
-    background-color: aquamarine;
+.todo-row-edit > div > textarea {
+    background-color: rgb(161, 198, 196);
     width: 75%;
     padding: 0.2rem;
 }
 
-.flex-todo-edit > div > button {
+.todo-row-edit > div > button {
     height: 2.5rem;
     width: 4rem;
 }
