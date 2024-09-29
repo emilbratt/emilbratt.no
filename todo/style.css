@@ -1,0 +1,173 @@
+
+.debug1 {
+    background-color: rgb(169, 96, 221);
+}
+.debug2 {
+    background-color: rgb(38, 97, 33);
+}
+
+body {
+    margin: 0rem;
+    font-family: 'Source Sans Pro', monospace;
+    background-color: rgb(227, 188, 221);
+    font-size: 1.0rem;
+}
+
+p {
+    margin: auto;
+    box-sizing: border-box;
+}
+
+button {
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+button:hover, button:active {
+    opacity: 0.8;
+    cursor: pointer;
+    /* background-color: rgb(196, 246, 275); */
+}
+
+textarea {
+    height: 3.5rem;
+    resize: vertical;
+    border: none;
+    box-sizing: border-box;
+    font-size: inherit;
+    font-weight: inherit;
+    text-decoration: none;
+    font-family: inherit;
+}
+
+.main-container {
+    background-color: rgb(111, 141, 233);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50rem;
+    display: flex;
+    flex-direction: column;
+    /* gap: 1rem; */
+}
+
+.main-container > div {
+    margin: 0.3rem 0.3rem;
+    background-color: rgb(227, 165, 106);
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-options {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.flex-options > div:first-child {
+    margin-right: auto;
+}
+
+.flex-options > div > button {
+    height: 2.5rem;
+    width: 5rem;
+}
+
+.flex-todo {
+    display: flex;
+    flex-direction: row;
+    gap: 0.3rem;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+}
+
+.flex-todo > div {
+    background-color: rgb(83, 152, 181);
+    margin: 0.3rem 0rem;
+    /* padding: 0.4rem; */
+    /* margin: 0.3rem 0.3rem; */
+    /* align-items: flex-start; */
+    /* min-height: 3rem; */
+    /* justify-content: center; */
+    /* height: 100%; */
+}
+
+.flex-todo > div:first-child {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    /* width: 100%; */
+}
+
+.flex-todo > div > p {
+    background-color: rgb(162, 207, 235);
+}
+
+.flex-todo > div > button {
+    height: 2.5rem;
+    width: 4rem;
+}
+
+.button-show-completed {
+    background-color: rgb(255, 252, 45);
+}
+
+.button-show-deleted {
+    background-color: rgb(246, 38, 246);
+}
+
+.button-add-todo {
+    background-color: rgb(96, 255, 88);
+}
+
+.button-save {
+    background-color: rgb(162, 255, 236);
+}
+
+.button-cancel {
+    background-color: rgb(255, 178, 90);
+}
+
+.button-delete {
+    background-color: rgb(255, 108, 35);
+}
+
+.button-check {
+    background-color: rgb(162, 255, 163);
+}
+
+.flex-todo-edit {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    background-color: rgb(67, 243, 184);
+}
+
+.flex-todo-edit > div {
+    margin: 0.3rem;
+}
+
+.flex-todo-edit > div:first-child {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.flex-todo-edit > div > textarea {
+    background-color: aquamarine;
+    width: 75%;
+    padding: 0.2rem;
+}
+
+.flex-todo-edit > div > button {
+    height: 2.5rem;
+    width: 4rem;
+}
