@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    background-color: rgb(47, 47, 47);
+    color: rgb(201, 209, 236);
+    font-size: 1.2rem;
+    font-family: tahoma, arial, helvetica, sans-serif;
+}
+p, h1, h2 {
+    text-align: center;
+}
+#hyperlink-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+#hyperlink-container > div {
+    padding: 1rem;
+    margin: auto;
+    background-color: rgb(67, 67, 67);
+}
+a {
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    border-radius: 1.6rem;
+    color: inherit;
+    min-width: 20rem;
+    color: inherit;
+    font-size: inherit;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: rgb(83, 83, 83);
+    padding: 0.9rem 0rem 0.9rem 0rem;
+    box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2), 0 0.6rem 2rem 0 rgba(0, 0, 0, 0.19);
+}
+
+a:hover, a:active, button:hover, button:active {
+    opacity: 0.8;
+    cursor: pointer;
+}
